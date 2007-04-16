@@ -1,6 +1,6 @@
 %define		source_name gmpc-qosd
 Summary:	A on-screen-display written to look nicer then xosd
-Summary(pl.UTF-8):	Wtyczka OSD napisana by wyglądać lepiej niż x
+Summary(pl.UTF-8):	Wtyczka OSD napisana by wyglądać lepiej niż xosd
 Name:		gmpc-plugin-qosd
 Version:	0.14.0
 Release:	1
@@ -11,12 +11,15 @@ Source0:	%{source_name}-%{version}.tar.gz
 # Source0-md5:	aec7ad71aa7f82a0a837386e673c1f1b
 Patch0:		%{name}-plugins_path.patch
 URL:		http://gmpc.sarine.nl/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
+BuildRequires:	cairo-devel
+BuildRequires:	glib2-devel >= 1:2.10
 BuildRequires:	gmpc-devel >= 0.14.0
-BuildRequires:	gtk+2-devel >= 2:2.4
+BuildRequires:	gtk+2-devel >= 2:2.8
 BuildRequires:	libglade2-devel
 BuildRequires:	libtool
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
