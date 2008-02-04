@@ -21,6 +21,7 @@ BuildRequires:	libglade2-devel
 BuildRequires:	libmpd-devel >= 0.15.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
+BuildRequires:	xosd-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
