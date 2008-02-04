@@ -2,13 +2,13 @@
 Summary:	A on-screen-display written to look nicer then xosd
 Summary(pl.UTF-8):	Wtyczka OSD napisana by wyglądać lepiej niż xosd
 Name:		gmpc-plugin-qosd
-Version:	0.14.0
+Version:	0.15.5.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Sound
-# http://sarine.nl/gmpc-plugins-downloads
-Source0:	%{source_name}-%{version}.tar.gz
-# Source0-md5:	aec7ad71aa7f82a0a837386e673c1f1b
+# http://download.sarine.nl/gmpc-0.15.5/
+Source0:	http://download.sarine.nl/gmpc-0.15.5/%{source_name}-%{version}.tar.gz
+# Source0-md5:	0aeb6c00a6e3184dbe702cedd3ffb7c4
 Patch0:		%{name}-plugins_path.patch
 URL:		http://gmpc.sarine.nl/
 BuildRequires:	autoconf >= 2.50
@@ -18,6 +18,7 @@ BuildRequires:	glib2-devel >= 1:2.10
 BuildRequires:	gmpc-devel >= 0.14.0
 BuildRequires:	gtk+2-devel >= 2:2.8
 BuildRequires:	libglade2-devel
+BuildRequires:	libmpd-devel >= 0.15.0
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
